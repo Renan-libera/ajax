@@ -4,7 +4,20 @@ $(document).ready(function(){
     $('.btn-send').click(function(e){
         e.preventDefault()
 
-        alert('Você clicou no botão enviar!!')
+    //Coletar as informacoes digitadas no formulario
+    let dados = $('#form').serialize()
+
+    
+    $.ajax({
+        type: 'POST',
+        datatype: 'JSON',
+        assync: true,
+        data: dados,
+        url: '../modelo/retorno.php',
+        success: function(){
+            
+        }
+    })
     })
 
 })
