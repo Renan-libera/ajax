@@ -18,33 +18,21 @@ if(empty($NOME) || empty($ANO) || empty($BEBIDA)){
 
     if($ANO >= 18 && $BEBIDA == "1"){
         $dados = array(
-            "mensagem" => 'Você pode essa consumir bebida',
-            "debug" => $ANO2
+            "mensagem" => "Você pode essa consumir bebida " . "<br> sua idade e: ".$ANO
         );
     } else {
         $dados = array(
-            "mensagem"=> 'Você não pode consumir bebida alcólica escolha outra opçâo'
+            "mensagem"=> "Você não pode consumir bebida alcólica escolha outra opçâo" . "<br> sua idade e: ".$ANO
         );
     }
 
     if($BEBIDA == "2"){
         $dados = array(
-            "mensagem" => 'Você pode consumir essa bebida'
+            "mensagem" => "Você pode consumir essa bebida" . "<br> sua idade e: ".$ANO
         );
     } else if ($BEBIDA == "3"){
         $dados = array(
-            "mensagem" => 'Você pode consumir essa bebida'
-        );
-    }
-    
-    if($ANO >= 18 && $BEBIDA == "4"){
-        $dados = array(
-            "mensagem" => 'Você pode essa consumir bebida',
-            "debug" => $ANO2
-        );
-    } else {
-        $dados = array(
-            "mensagem"=> 'Você não pode consumir bebida alcólica escolha outra opçâo'
+            "mensagem" => "Você pode consumir essa bebida" . "<br> sua idade e: ".$ANO
         );
     }
 
